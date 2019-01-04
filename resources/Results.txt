@@ -1,0 +1,12 @@
+%WER 79.83 [ 95 / 119, 6 ins, 20 del, 69 sub ] exp/mono/decode/wer_10
+%WER 82.35 [ 98 / 119, 11 ins, 16 del, 71 sub ] exp/tri1_450_1800/decode/wer_10
+%WER 87.39 [ 104 / 119, 16 ins, 16 del, 72 sub ] exp/tri2_450_1800/decode/wer_10
+%WER 79.83 [ 95 / 119, 6 ins, 20 del, 69 sub ] exp/mono/decode/wer_10
+%WER 82.35 [ 98 / 119, 11 ins, 16 del, 71 sub ] exp/tri1_450_1800/decode/wer_10
+%WER 87.39 [ 104 / 119, 16 ins, 16 del, 72 sub ] exp/tri2_450_1800/decode/wer_10
+%WER 79.83 [ 95 / 119, 6 ins, 20 del, 69 sub ] exp/mono/decode/wer_10
+%WER 82.35 [ 98 / 119, 11 ins, 16 del, 71 sub ] exp/tri1_450_1800/decode/wer_10
+%WER 87.39 [ 104 / 119, 16 ins, 16 del, 72 sub ] exp/tri2_450_1800/decode/wer_10
+%WER 44.96 [ 58 / 129, 4 ins, 39 del, 15 sub ] exp/mono/decode/wer_10
+%WER 49.61 [ 64 / 129, 10 ins, 35 del, 19 sub ] exp/tri1_450_1800/decode/wer_18
+%WER 48.06 [ 62 / 129, 8 ins, 39 del, 15 sub ] exp/tri2_450_1800/decode/wer_17
