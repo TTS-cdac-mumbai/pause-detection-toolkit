@@ -1,0 +1,1 @@
+awk 'NR==FNR{ind[$2]=$1; next} {printf("%s ",$1);for(i=2;i<=NF;i++) printf("%s ",ind[$i]);printf("\n")}' /speech1/DIT_PROJ/guru/experiment/MANDI/phase_2/Tamil/model_1/IRSTLM/ngram_commodity/Ariyalur/words.txt /speech1/DIT_PROJ/guru/experiment/MANDI/phase_2/Tamil/model_1/exp/tri2_1350_24300/decode_ngram_ariyalur/scoring/10.tra > ngram_out_ari
