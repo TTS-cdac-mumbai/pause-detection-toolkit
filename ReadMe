@@ -1,0 +1,47 @@
+Prerequisite
+	Kaldi  (GPU-preferred)
+	Unified Parser / Parser
+
+Input:
+	Put txt.done.data file in input/ directory
+	Put respective wav files in input/wav directory 
+
+Setup:
+	Change path.sh according to kaldi setup
+	update the unified parser path in : scripts_alignment_for_TTS/text_lexicon.pl
+	change path of kaldi variable in path.sh
+	change path of "basepath" variable in resources/text-correction/path.properties
+
+
+Run command:
+
+	 bash run.sh DataPath  NumberofJobs BoundaryCorrectionflag SamplingRate
+eg:      bash run.sh /home/HindiMale/  16 1 16000
+
+
+The  DataPath (/home/HindiMale/) folder should have:
+	wav folder # with all the wav files  use 16KHz files
+	txt.done.data file  # with corresponding text
+	hybrid folder with  output_lab_phone, output_lab_syllable folders from hybrid segmentation ### run hybrid segmentation once to get these folders
+
+	Or modify these paths in run.sh
+		WAVPath=$DataPath/wav/ 
+		TXT=$DataPath/txt.done.data 
+		HybDatapath=$DataPath/hybrid/
+
+Adjust the following flag in run.sh accordingly for DNN or CNN training: 
+	DNN=1
+	CNN=1 
+	iterations=8   # for number of DNN iterations
+	BC=1   # for boundary correction, set it to 1
+
+
+Run Command-
+
+goto-resources/text-correction/
+
+and- 
+
+sh runJava.sh
+
+
